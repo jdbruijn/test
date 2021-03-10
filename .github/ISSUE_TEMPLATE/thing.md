@@ -1,12 +1,30 @@
----
-name: 🐛 Thing
-about: Create a bug report (thing)
+name: 🐛 Bug report
+about: Create a bug report
 labels: bug
----
-
-# Thing
-
-<!--
-  Exact steps to reproduce the actual behaviour.
-  This may be simply a list of steps, an minimal example repository, a repl.it link, or something similar.
--->
+issue_body: false
+body:
+  - type: markdown
+    attributes:
+      value: Please fill out the issue checklist below and provide all the requested information.
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the actual behaviour.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What did you expect to happen?
+      description: A clear and concise description of the expected behaviour.
+    validations:
+      required: true
+     - type: textarea
+    attributes:
+      label: Step-by-step reproduction instructions
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "`npx envinfo --system --binaries --npmGlobalPackages '@withthegrid/platform-scripts'` output OR just the version number
+    validations:
+      required: true
