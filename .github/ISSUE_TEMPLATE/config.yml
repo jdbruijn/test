@@ -1,0 +1,4 @@
+contact_links:
+  - name: Start a discussion
+    url: https://github.com/jdbruijn/test/discussions/new
+    about: If you have any questions or doubts about whether you should create a feature request or bug report, please click here to create a Discussion instead of an Issue.
